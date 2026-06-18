@@ -3,11 +3,11 @@
     {
       "id": 75,
       "name": "Sort Colors",
-      "pattern": "two-pointers",
+      "pattern": "two-pointers/dutch-flag",
       "added": "2026-06-18",
       "reason": "slow",
       "target_min": 15,
-      "status": "cleared",
+      "status": "open",
       "last_attempt": "2026-06-18",
       "notes": "didn't advance mid on the high-swap"
     }
