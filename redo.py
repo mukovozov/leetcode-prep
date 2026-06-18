@@ -51,6 +51,10 @@ def regenerate_md(data):
 
 def git_push(message):
     subprocess.run(["git", "add", "-A"], cwd=ROOT, check=True)
+    result = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT)
+    if result.returncode == 0:
+        print("No changes to commit.")
+        return
     subprocess.run(["git", "commit", "-m", message], cwd=ROOT, check=True)
     subprocess.run(["git", "push"], cwd=ROOT, check=True)
 
