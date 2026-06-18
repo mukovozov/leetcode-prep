@@ -10,6 +10,17 @@
       "status": "open",
       "last_attempt": "2026-06-18",
       "notes": "didn't advance mid on the high-swap"
+    },
+    {
+      "id": 424,
+      "name": "Longest Repeating Character Replacement",
+      "pattern": "sliding-window",
+      "added": "2026-06-18",
+      "reason": "fail",
+      "target_min": 25,
+      "status": "open",
+      "last_attempt": "2026-06-18",
+      "notes": "pinned to global-max char; track in-window maxFreq instead, validity = size - maxFreq <= k"
     }
   ]
 }
