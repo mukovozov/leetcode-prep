@@ -1,3 +1,15 @@
 {
-  "problems": []
+  "problems": [
+    {
+      "id": 75,
+      "name": "Sort Colors",
+      "pattern": "two-pointers",
+      "added": "2026-06-18",
+      "reason": "slow",
+      "target_min": 15,
+      "status": "open",
+      "last_attempt": "2026-06-18",
+      "notes": "didn't advance mid on the high-swap"
+    }
+  ]
 }
