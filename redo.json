@@ -21,6 +21,28 @@
       "status": "open",
       "last_attempt": "2026-06-18",
       "notes": "pinned to global-max char; track in-window maxFreq instead, validity = size - maxFreq <= k"
+    },
+    {
+      "id": 33,
+      "name": "Search in Rotated Sorted Array",
+      "pattern": "binary-search/rotated",
+      "added": "2026-06-19",
+      "reason": "fumble",
+      "target_min": 20,
+      "status": "open",
+      "last_attempt": "2026-06-19",
+      "notes": "mid = l + (r-l)/2 (index anchored to l, not a bare offset). discriminator = which half is sorted via nums[l]<=nums[mid], then is target INSIDE that half's range — not target vs nums[mid]"
+    },
+    {
+      "id": 875,
+      "name": "Koko Eating Bananas",
+      "pattern": "binary-search-on-answer",
+      "added": "2026-06-19",
+      "reason": "taught",
+      "target_min": 25,
+      "status": "open",
+      "last_attempt": "2026-06-19",
+      "notes": "BS on answer space [ceil(sum/h)..max(pile)], not on the array. feasible(k)=sum(ceil(p/k))<=h. monotonic so leftmost-true → return l. traps: sum() overflows Int (sumOf{toLong}); integer ceil (p+k-1)/k needs k>=1 guard"
     }
   ]
 }
